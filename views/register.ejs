@@ -1,0 +1,52 @@
+<%- include("./partials/header") %>
+
+
+
+<img id="vol_logo" src="https://photos.angel.co/startups/i/7977329-7583acc711b03f6cb266103944a0808d-medium_jpg.jpg?buster=1600195566">
+
+
+
+<div class="container">
+	<div id="vol-upper-side">
+		<h3><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  <path fill-rule="evenodd" d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+		</svg> SignUp </h3>
+	  </div>
+	  <form  action="/verification-otp" method="post">
+			<div class=" rounded form-row">
+		    <div class="form-group col-md-6">
+		      <label style="color:#600080;"for="inputEmail4"><b>Username</b></label>
+		      <input type="text" class="form-control" name="username" placeholder="Enter Username" required>
+		    </div>
+
+		    <div class=" form-group col-md-6">
+		      <label style="color:#600080;" for="inputPassword4"><b>Password</b></label>
+		      <input type="password" class="form-control" name="password" Placeholder="Enter Password" required>
+		    </div>
+		  </div>
+			<div class=" rounded form-group">
+		    <label  style="color:#600080;" for="inputAddress"><b>Contact</b></label>
+		    <input type="text" class="form-control" name="contact" placeholder="Enter Contact +91" required>
+				<small id="emailHelp"  style="color:red;" >*OTP will be send to these Contact!</small>
+		  </div>
+
+			<input type="hidden" name="notification" value="" />
+			<input type="hidden" name="age" value="" />
+			<input type="hidden" name="college" value="" />
+			<input type="hidden" name="city" value="" />
+
+			<div class=" form-group">
+		    <div class="form-check">
+		      <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+		      <label class="form-check-label" for="gridCheck">
+		       By continuing, you agree to Education4ol <a href="/terms">Terms and Conditions</a> of Use.
+		      </label>
+		    </div>
+		  </div>
+			<div class="shadow p-3 mb-5 bg-white">
+				 <button type="submit" class="bato btn btn-primary btn-lg btn-block">Signing you In > > > </button>
+				 <div><a href="/login" style="color:#0040ff;text-align: center; font: 20px Arial, sans-serif;">Already user? login</a></div>
+			</div>
+
+		</form>
+</div>
